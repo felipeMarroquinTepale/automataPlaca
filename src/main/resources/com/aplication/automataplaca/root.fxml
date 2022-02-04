@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="650.0" style="-fx-background-color: #3570BC;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aplication.automataplaca.rootController">
+    <children>
+        <SplitPane dividerPositions="0.5805084745762712" layoutX="60.0" layoutY="28.0" orientation="VERTICAL" prefHeight="474.0" prefWidth="532.0" style="-fx-background-radius: 10;">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #30AAE1; -fx-background-radius: 10 10 18 18;">
+                    <children>
+                        <Button fx:id="botoomValidarPlaca" alignment="CENTER" layoutX="177.0" layoutY="183.0" mnemonicParsing="false" onAction="#validarPlaca" prefHeight="37.0" prefWidth="184.0" style="-fx-background-color: #3B4896; -fx-background-radius: 10;" text="VALIDAR PLACA" textAlignment="CENTER" textFill="#fffbfb">
+                            <font>
+                                <Font name="DejaVu Sans Condensed Bold" size="14.0" />
+                            </font>
+                            <effect>
+                                <Blend mode="MULTIPLY" opacity="0.46" />
+                            </effect>
+                        </Button>
+                        <TextField fx:id="textFieldPlaca" alignment="CENTER" layoutX="129.0" layoutY="121.0" prefHeight="43.0" prefWidth="280.0" style="-fx-background-radius: 10; -fx-background-color: #30AAE1; -fx-border-color: #3B4896; -fx-border-radius: 10;">
+                            <opaqueInsets>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </opaqueInsets></TextField>
+                        <Label layoutX="130.0" layoutY="105.0" prefHeight="15.0" prefWidth="214.0" text="Ingresa la placa que desea validar" textFill="#fcf6f6">
+                            <font>
+                                <Font name="Ubuntu Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="14.0" prefHeight="71.0" prefWidth="328.0" text="Recuerde el formato: XXX-XXX-X  O XX-XXXX-X" textFill="#f5f0f0">
+                            <font>
+                                <Font name="URWGothic-Book" size="13.0" />
+                            </font></Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="234.0" prefWidth="563.0" style="-fx-background-radius: 18 18 0 0;">
+                    <children>
+                        <TextArea fx:id="Textarea_placa" editable="false" layoutX="27.0" layoutY="24.0" prefHeight="144.0" prefWidth="482.0" wrapText="true" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
